@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>little stars</title>
+</head>
+
+<body>
+    <script>
+        for (var i = 1; i <= 5; i++) {
+            for (var d = 1; d <= 5 - i; d++) {
+                document.write("&nbsp;&nbsp;");
+            }
+            for (var j = 1; j <= 2 * i - 1; j++) {
+                document.write("*");
+            }
+            document.write("<br/>");
+        }
+
+        for (var i = 1; i <= 5; i++) {
+            for (var d = 1; d <= i; d++) {
+                document.write("&nbsp;&nbsp;");
+            }
+            for (var k = 1; k <= 2 * (5 - i) - 1; k++) {
+                document.write("*");
+            }
+            document.write("<br/>");
+        }
+    </script>
+</body>
+
+</html>
